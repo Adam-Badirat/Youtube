@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #0f0f0f;
+}
+
+.header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  gap: 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.logo h2 {
+  font-size: 22px;
+}
+
+.youtube-icon {
+  background-color: red;
+  color: white;
+  padding: 5px 9px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.search-input {
+  width: 400px;
+  padding: 12px 15px;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-button {
+  padding: 12px 20px;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #7054d8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar-item p {
+  font-size: 14px;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-item.active {
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+
+/* Keep the header at the top */
+.header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+/* Place the sidebar and main content side by side */
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Restrict the sidebar to the left */
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  height: calc(100vh - 65px);
+  padding: 12px;
+  overflow-y: auto;
+}
+
+/* Stack sidebar items vertically */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Reduce the space around each item */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Style the item text */
+.sidebar-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Highlight Home */
+.sidebar-item.active {
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+
+/* Add hover effect */
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Keep dividers within the sidebar */
+.sidebar hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 10px 0;
+}
+
+/* Style section headings */
+.sidebar h4 {
+  padding: 8px 12px;
+  margin: 0;
+}
+
+/* Let the main content fill the remaining space */
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 25px;
+}
